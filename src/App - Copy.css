@@ -1,0 +1,338 @@
+body {
+  background: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  color: #888888;
+  margin: 0;
+}
+.container{
+  padding: 70px 0px 0px 0px;
+  
+}
+h2 {
+  margin: 0 0 15px 0;
+  letter-spacing: -1px;
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(206,206,206);
+}
+h3 {
+  margin: 0 0 5px 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: rgb(206,206,206);
+}
+p {
+  line-height: 24px;
+  margin: 0;
+}
+.fullscreen {
+  padding-bottom: 100vh;
+}
+.bold {
+  font-weight: bold;
+}
+/* ========================MENU-START================== */
+* {
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('PT Sans'), local('PTSans-Regular'), url(https://fonts.gstatic.com/s/ptsans/v9/jizaRExUiTo99u79D0KEwA.ttf) format('truetype');
+}
+.menu {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  height: 60px;
+  margin: 0;
+  position: fixed;
+  background-color: rgb(40, 40, 40);
+  z-index: 7;
+}
+.menu li {
+  float: left;
+  width: 14.28%;/*width of links*/
+  height: 100%;
+}
+.menu a {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  font-size: 1em;
+  z-index: 9;
+}
+a.active {
+  background-color: rgb(255,0,0);
+  pointer-events: none;
+}
+li.slider {
+  width: 14.28%;/*slider width*/
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgb(255,0,0);
+  z-index: 8;
+  transition: left 0.4s, background-color 0.4s;
+}
+.menu li:nth-child(1):hover ~ .slider,
+.menu li:nth-child(1):focus ~ .slider,
+.menu li:nth-child(1):active ~ .slider {
+  left: 0;/*where the slider stops*/
+  background-color: rgb(255,0,0);
+}
+.menu li:nth-child(2):hover ~ .slider,
+.menu li:nth-child(2):focus ~ .slider,
+.menu li:nth-child(2):active ~ .slider {
+  left: 14.289%;/*where the slider stops*/
+  background-color: rgb(255,128,0);
+}
+.menu li:nth-child(3):hover ~ .slider,
+.menu li:nth-child(3):focus ~ .slider,
+.menu li:nth-child(3):active ~ .slider {
+  left: 28.569%;/*where the slider stops*/
+  background-color: rgb(180,180,0);
+}
+.menu li:nth-child(4):hover ~ .slider,
+.menu li:nth-child(4):focus ~ .slider,
+.menu li:nth-child(4):active ~ .slider {
+  left: 42.849%;/*where the slider stops*/
+  background-color: rgb(0,255,0);
+}
+.menu li:nth-child(5):hover ~ .slider,
+.menu li:nth-child(5):focus ~ .slider,
+.menu li:nth-child(5):active ~ .slider {
+  left: 57.129%;/*where the slider stops*/
+  background-color: rgb(0,0,255);
+}
+.menu li:nth-child(6):hover ~ .slider,
+.menu li:nth-child(6):focus ~ .slider,
+.menu li:nth-child(6):active ~ .slider {
+  left: 71.49%;/*where the slider stops*/
+  background-color: rgb(75,0,130);
+}
+.menu li:nth-child(7):hover ~ .slider,
+.menu li:nth-child(7):focus ~ .slider,
+.menu li:nth-child(7):active ~ .slider {
+  left: 85.689%;/*where the slider stops*/
+  background-color: rgb(238, 130, 238);
+}
+/* ========================MENU-END==================== */
+/* ======================== Home ======================== */
+#Home {
+  padding-bottom: 32vh;
+  background: url(../src/img/pw_maze_black.png) left top repeat;
+}
+#Home h1 {
+  padding-top: 35vh;
+  letter-spacing: -1px;
+  font-size: 7em;
+  font-family: 'Montserrat',sans-serif;
+  color: #fff;
+}
+#Home h2{
+  padding: 0 0 0 0px;
+  background: none;
+  font-size: 3em;
+  font-family: 'Montserrat',sans-serif;
+  display: inline-block;
+  color: #bcbcbc;
+}
+/* ======================== Home ======================== */
+/* ======================== About ======================== */
+#About {
+  padding-top: 24vh;
+  padding-bottom: 0vh;
+  background: rgb(0, 0, 0);
+  color: rgb(206, 206, 206)
+}
+#About h2 {
+  font-size: 5em;
+}
+#About p {
+  font-size: 2em;
+  line-height: 1em;
+}
+#About img{
+  margin-top: 15vh;
+  height: 150px;
+  width: inherit;
+}
+/* ======================== About ======================== */
+/* ======================== Project ======================== */
+#Projects {
+  padding-top: 16vh;
+  padding-bottom: 79vh;
+}
+#Projects h2 {
+  font-size: 5em;
+  color: rgb(6, 6, 6);
+}
+#Projects .row {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+#Projects .col {
+  padding-top: 8vh;
+}
+#Projects a {
+  text-decoration-line: none;
+  color: rgb(0, 0, 0);
+}
+#SBImage {
+  height: 156px;
+  width: 350px;
+}
+#shutTheBoxLink {
+  font-size: 2em;
+}
+#shutTheBoxGitLink {
+  font-size: 1em;
+}
+#vaidasLogo {
+  height: 156px;
+  width: 350px;
+}
+#vaidasLink {
+  font-size: 2em;
+}
+#vaidasGitLink {
+  font-size: 1em;
+}
+#forexImage {
+  height: 156px;
+  width: 350px;
+}
+#forexLink {
+  font-size: 2em;
+}
+#forexGitLink {
+  font-size: 1em;
+}
+/* ======================== Project ======================== */
+/* ======================== Experience ======================== */
+#Experience {
+  padding-bottom: 8vh;
+  background: url(../src/img/section-bg1.jpg) center center no-repeat;
+  background-size: cover;
+  color: rgb(206, 206, 206);
+}
+#Experience h2 {
+  padding-top: 11vh;
+  font-size: 4em;
+}
+.job{
+  font-size: 1em;
+}
+.company {
+  text-decoration: underline;
+}
+/* ======================== Experience ======================== */
+/* ======================== Skills ======================== */
+#Skills {
+  padding-top: 10vh;
+  padding-bottom: 57vh;
+  background: linear-gradient(to bottom, rgb(255, 255, 255, 0.8), rgb(255, 255, 255, 0.8)),url(../src/img/B&W\ squares.jpg);
+  color: rgb(6, 6, 6);
+}
+#Skills h2 {
+  color: rgb(6, 6, 6);
+  font-size: 5em;
+}
+#Skills p {
+  font-size: 2em;
+  line-height: 1em;
+}
+#Skills .row{
+  margin: 4vh 0vw 4vh 40vw;
+}
+#HTML {
+  height: 64px;
+  width: 74px;
+}
+#CSS {
+  height: 64px;
+  width: 55px;
+}
+#JS {
+  margin-top: 12px;
+  margin-left: 10px;
+  height: 50px;
+  width: 52px;
+}
+/* ======================== Skills ======================== */
+/* ======================== Education ======================== */
+#Education {
+  padding-bottom: 0vh;
+  background: linear-gradient(to bottom, rgb(0, 0, 0, 0.6), rgb(0, 0, 0, 0.6)),url(../src/img/swirls.jpg);
+  color: rgb(206, 206, 206);
+}
+#Education h2 {
+  padding-top: 12vh;
+  font-size: 5em;
+}
+#Education p{
+  font-size: 1em;
+  font-weight: 550;
+}
+/* ======================== Education ======================== */
+/* ======================== Lets Talk ======================== */
+#LetsTalk {
+    background: url(../src/img/section-bg2.jpg) top center no-repeat;
+    background-size: cover;
+    padding: 0px 0px 70px 0px;
+}
+#LetsTalk h2 {
+  font-size: 9em;
+}
+/* ======================== Lets Talk ======================== */
+/* ======================== Contact ======================== */
+#Contact {
+  padding-bottom: 2vh;
+  background: url(../src/img/pw_maze_black_2X.png) left top repeat;
+}
+#Contact span{
+  font-size: 2em;
+}
+#linkedin {
+  font-size: 2em;
+  color: #fff;
+}
+#Contact a{
+  font-size: 2em;
+}
+#linkedinLogo{
+  margin: 7px 0px 0px -38px;
+  position: absolute;
+  height: 28px;
+  width: 35px;
+}
+#email {
+  font-size: 2em;
+  color: #fff;
+}
+#emailLogo{
+  margin: 15px 0px 0px -25px;
+  position: absolute;
+  height: 15px;
+  width: 20px;
+}
+#telephone {
+  font-size: 2em;
+  color: #fff;
+}
+#telephoneLogo{
+  margin: 11px 0px 0px -20px;
+  position: absolute;
+  height: 20px;
+  width: 20px;
+}
+/* ======================== Contact ======================== */

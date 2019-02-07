@@ -1,0 +1,30 @@
+#Home {
+  padding-bottom: 32vh;
+  background: url(../img/pw_maze_black.png) left top repeat;
+}
+#Experience {
+  padding-bottom: 8vh;
+  background: url(../img/section-bg1.jpg) center center no-repeat;
+  background-size: cover;
+  color: rgb(206, 206, 206);
+}
+#Skills {
+  padding-top: 18vh;
+  padding-bottom: 20vh;
+  background: linear-gradient(to bottom, rgb(255, 255, 255, 0.8), rgb(255, 255, 255, 0.8)),url(../img/B&W\ squares.jpg);
+  color: rgb(6, 6, 6);
+}
+#Education {
+  padding-bottom: 4vh;
+  background: linear-gradient(to bottom, rgb(0, 0, 0, 0.6), rgb(0, 0, 0, 0.6)),url(../img/swirls.jpg);
+  color: rgb(206, 206, 206);
+}
+#LetsTalk {
+    background: url(../img/section-bg2.jpg) top center no-repeat;
+    background-size: cover;
+    padding: 50px 0px 50px 0px;
+}
+#Contact {
+  padding-bottom: 2vh;
+  background: url(../img/pw_maze_black_2X.png) left top repeat;
+}
