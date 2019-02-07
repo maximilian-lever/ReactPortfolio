@@ -1,0 +1,1260 @@
+body {
+  background: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  color: #888888;
+  margin: 0;
+}
+.container{
+  padding: 70px 0px 0px 0px; 
+}
+.modal-content {
+  margin-top: 34%;
+}
+.modal-header .close {
+  padding: 1%;
+  margin: 0;
+}
+.fade:not(.show) {
+  opacity: 1;
+}
+.row{
+  margin-right: 0%;
+  margin-left: 0%;
+}
+h2 {
+  margin: 0 0 15px 0;
+  letter-spacing: -1px;
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(206,206,206);
+}
+h3 {
+  margin: 0 0 5px 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: rgb(206,206,206);
+}
+p {
+  line-height: 24px;
+  margin: 0;
+}
+.bold {
+  font-weight: bold;
+}
+.underline{
+  text-decoration: underline;
+}
+/* ========================MENU-START================== */
+* {
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('PT Sans'), local('PTSans-Regular'), url(https://fonts.gstatic.com/s/ptsans/v9/jizaRExUiTo99u79D0KEwA.ttf) format('truetype');
+}
+.menu {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  height: 60px;
+  margin: 0;
+  position: fixed;
+  background-color: rgb(40, 40, 40);
+  z-index: 7;
+}
+.menu li {
+  float: left;
+  width: 14.28%;/*width of links*/
+  height: 100%;
+}
+.menu a {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  font-size: 1em;
+  z-index: 9;
+}
+a.active {
+  background-color: rgb(255,0,0);
+  pointer-events: none;
+}
+li.slider {
+  width: 14.28%;/*slider width*/
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgb(255,0,0);
+  z-index: 8;
+  transition: left 0.4s, background-color 0.4s;
+}
+.menu li:nth-child(1):hover ~ .slider,
+.menu li:nth-child(1):focus ~ .slider,
+.menu li:nth-child(1):active ~ .slider {
+  left: 0;/*where the slider stops*/
+  background-color: rgb(255,0,0);
+}
+.menu li:nth-child(2):hover ~ .slider,
+.menu li:nth-child(2):focus ~ .slider,
+.menu li:nth-child(2):active ~ .slider {
+  left: 14.289%;/*where the slider stops*/
+  background-color: rgb(255,128,0);
+}
+.menu li:nth-child(3):hover ~ .slider,
+.menu li:nth-child(3):focus ~ .slider,
+.menu li:nth-child(3):active ~ .slider {
+  left: 28.569%;/*where the slider stops*/
+  background-color: rgb(180,180,0);
+}
+.menu li:nth-child(4):hover ~ .slider,
+.menu li:nth-child(4):focus ~ .slider,
+.menu li:nth-child(4):active ~ .slider {
+  left: 42.849%;/*where the slider stops*/
+  background-color: rgb(0,255,0);
+}
+.menu li:nth-child(5):hover ~ .slider,
+.menu li:nth-child(5):focus ~ .slider,
+.menu li:nth-child(5):active ~ .slider {
+  left: 57.129%;/*where the slider stops*/
+  background-color: rgb(0,0,255);
+}
+.menu li:nth-child(6):hover ~ .slider,
+.menu li:nth-child(6):focus ~ .slider,
+.menu li:nth-child(6):active ~ .slider {
+  left: 71.49%;/*where the slider stops*/
+  background-color: rgb(75,0,130);
+}
+.menu li:nth-child(7):hover ~ .slider,
+.menu li:nth-child(7):focus ~ .slider,
+.menu li:nth-child(7):active ~ .slider {
+  left: 85.689%;/*where the slider stops*/
+  background-color: rgb(238, 130, 238);
+}
+/* ========================MENU-END==================== */
+/* ======================== Home ======================== */
+#Home {
+  padding-bottom: 32vh;
+}
+#Home h1 {
+  padding-top: 35vh;
+  letter-spacing: -1px;
+  font-size: 400%;
+  font-family: 'Montserrat',sans-serif;
+  color: #fff;
+}
+#Home h2{
+  background: none;
+  font-size: 3em;
+  font-family: 'Montserrat',sans-serif;
+  color: #bcbcbc;
+}
+/* ======================== Home ======================== */
+/* ======================== About ======================= */
+#About {
+  padding-top: 24vh;
+  background: rgb(0, 0, 0);
+  color: rgb(206, 206, 206)
+}
+#About h2 {
+  font-size: 5em;
+}
+#About p {
+  font-size: 2em;
+  line-height: 1em;
+}
+#About img{
+  margin-top: 14vh;
+  height: 150px;
+  width: inherit;
+}
+/* ======================== About ======================== */
+/* ======================== Project ====================== */
+#Projects {
+  padding-top: 18vh;
+  padding-bottom: 21vh;
+}
+#Projects h2 {
+  font-size: 400%;
+  color: rgb(6, 6, 6);
+}
+#Projects .row {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+#Projects .row .col .container h3{
+  font-size: 228%;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+}
+#Projects .row .col .container button{
+  margin-top: 2vh;
+}
+#Projects .row .col:nth-child(1){
+  flex-basis: 34%;
+}
+#Projects .row .col:nth-child(2){
+  flex-basis: 33%;
+}
+#Projects .row .col:nth-child(3){
+  flex-basis: 33%;
+}
+#Projects a {
+  text-decoration-line: none;
+  color: rgb(0, 0, 0);
+}
+#forexImage {
+  height: auto;
+  width: 80%;
+}
+#forexModalh4 {
+  margin-right: 24%;
+}
+#SBImage {
+  height: auto;
+  width: 80%;
+}
+#shutTheBoxModalh4{
+  margin-right: 32%;
+}
+#vaidasLogo {
+  height: auto;
+  width: 80%;
+}
+#vaidasBicyclesModalh4{
+  margin-right: 29%;
+}
+/* ======================== Project ======================== */
+/* ======================== Experience ===================== */
+#Experience {
+  padding-bottom: 8vh;
+  background-size: cover;
+  color: rgb(206, 206, 206);
+}
+#Experience h2 {
+  padding-top: 11vh;
+  font-size: 4em;
+}
+.job{
+  font-size: 1em;
+}
+.company {
+  text-decoration: underline;
+}
+/* ======================== Experience ==================== */
+/* ======================== Skills ======================== */
+#Skills {
+  padding-top: 18vh;
+  padding-bottom: 20vh;
+  color: rgb(6, 6, 6);
+}
+#Skills h2 {
+  color: rgb(6, 6, 6);
+  font-size: 5em;
+}
+#Skills .row {
+  margin-right: 0%;
+  margin-left: 0%;
+  margin-top: 6%;
+  margin-bottom: 2%;
+}
+#Skills .col:nth-child(1) span{
+  margin-left: 21%;
+  font-size: 250%;
+}
+#Skills .col:nth-child(2) span{
+  margin-left: 30%;
+  font-size: 250%;
+}
+#Skills .col:nth-child(3) span{
+  margin-left: 10%;
+  font-size: 250%;
+}
+#Skills .col:nth-child(4) span{
+  margin-left: 18%;
+  font-size: 250%;
+}
+#Skills .col:nth-child(5) span{
+  font-size: 250%;
+}
+#HTML {
+  margin-left: 20%;
+  height: inherit;
+  width: 62%;
+}
+#CSS {
+  margin-left: 28%;
+  height: inherit;
+  width: 44%;
+}
+#JS {
+  margin: 12% 0% 0% 27%;
+  height: inherit;
+  width: 44%;
+}
+#reactJS{
+  margin: 8% 0% 0% 22%;
+  height: inherit;
+  width: 54%;
+}
+#communication{
+  margin: 9% 0% 0% 31%;
+  height: inherit;
+  width: 37%;
+}
+/* ======================== Skills ======================== */
+/* ======================== Education ===================== */
+#Education {
+  padding-bottom: 4vh;
+  color: rgb(206, 206, 206);
+}
+#Education h2 {
+  padding-top: 12vh;
+  font-size: 400%;
+}
+#Education p{
+  font-size: 1em;
+  font-weight: 550;
+}
+/* ======================== Education ======================== */
+/* ======================== Lets Talk ======================== */
+#LetsTalk {
+  background-size: cover;
+  padding: 50px 0px 50px 0px;
+}
+#LetsTalk h2 {
+  font-size: 9em;
+}
+/* ======================== Lets Talk ======================== */
+/* ======================== Contact ======================== */
+#Contact {
+  padding-bottom: 2vh;
+}
+#Contact span{
+  font-size: 2em;
+}
+#linkedin {
+  padding-top: 2vh;
+  font-size: 0em;
+  color: #fff;
+}
+#Contact a{
+  font-size: 2em;
+}
+#linkedinLogo{
+  margin: 7px 0px 0px -38px;
+  position: absolute;
+  height: 28px;
+  width: 35px;
+}
+#email {
+  font-size: 0em;
+  color: #fff;
+}
+#emailLogo{
+  margin: 15px 0px 0px -25px;
+  position: absolute;
+  height: 15px;
+  width: 20px;
+}
+#telephone {
+  font-size: 0em;
+  color: #fff;
+}
+#telephoneLogo{
+  margin: 11px 0px 0px -20px;
+  position: absolute;
+  height: 20px;
+  width: 20px;
+}
+/* ======================== Contact ======================== */
+@media (max-width:1280px){
+  /* 100% */
+  #Home h1{
+    font-size: 700%;
+  }
+  #Home h2{
+    font-size: 300%;
+  }
+  #Projects h2{
+    font-size: 450%;
+    margin-bottom: -1vh;
+  }
+  #Experience h2{
+    font-size: 400%;
+  }
+  #Education h2{
+    font-size: 400%;
+  }
+  #SBImage{
+    width: 86%;
+  }
+  #shutTheBoxLink{
+    font-size: 150%;
+  }
+  #shutTheBoxGitLink{
+    font-size: 150%;
+  }
+  #vaidasLogo{
+    width: 86%;
+  }
+  #vaidasLink{
+    font-size: 150%;
+  }
+  #vaidasGitLink{
+    font-size: 150%;
+  }
+  #forexImage{
+    width: 86%;
+  }
+  #forexLink{
+    font-size: 150%;
+  }
+  #forexGitLink{
+    font-size: 150%;
+  }
+  #LetsTalk h2{
+    font-size: 933%;
+  }
+  #Contact span{
+    font-size: 190%;
+  }
+}
+@media (max-width:1152px){
+  /* 90% */
+  #Home h1{
+    font-size: 630%;
+  }
+  #Projects h2{
+    font-size: 540%;
+  }
+}
+@media (max-width:1024px) and (max-height:1366px){
+  .row{
+    margin-right: 0px;
+  }
+  .menu a{
+    font-size: 150%;
+  }
+  #Home{
+    padding-top: 8vh;
+    padding-bottom: 45vh;
+  }
+  #About{
+    padding-top: 32vh;
+  }
+  #About h2{
+    font-size: 600%;
+  }
+  #About p{
+    font-size: 250%;
+  }
+  #About img{
+    margin-top: 36vh;
+  }
+  #Projects{
+    padding-top: 5vh;
+  }
+  #Projects .row .col:nth-child(1){
+    flex-basis: 63%;
+  }
+  #Projects .row .col:nth-child(2){
+    flex-basis: 62%;
+  }
+  #Projects .row .col:nth-child(3){
+    flex-basis: 57%;
+  }
+  #SBImage{
+    width: 95%;
+  }
+  #shutTheBoxGitLink{
+    font-size: 130%;
+  }
+  #vaidasLogo{
+    width: 93%;
+  }
+  #vaidasGitLink{
+    font-size: 130%;
+  }
+  #forexImage{
+    width: 93%;
+  }
+  #forexGitLink{
+    font-size: 130%;
+  }
+  #Experience{
+    padding-top: 12vh;
+    padding-bottom: 28vh;
+  }
+  #Experience h2{
+    font-size: 500%;
+  }
+  #Experience p{
+    font-size: 160%;
+  }
+  #Skills{
+    padding-top: 34vh;
+    padding-bottom: 34vh;
+  }
+  #Skills h2{
+    font-size: 500%;
+  }
+  #Skills p{
+    font-size: 250%;
+  }
+  #Skills .row{
+    margin: 0vh 0vw 0vh 38vw;
+  }
+  #Education{
+    padding-top: 14vh;
+    padding-bottom: 34vh;
+  }
+  #Education h2{
+    font-size: 500%;
+  }
+  #Education p{
+    font-size: 185%;
+  }
+}
+@media (max-width:1024px){
+  /* 80% */
+  #Home h1{
+    font-size: 560%;
+  }
+  #Projects h2{
+    font-size: 480%;
+  }
+}
+@media (max-width:896px){
+  /* 70% */
+  #Home h1{
+    font-size: 490%;
+  }
+  #Projects h2{
+    font-size: 420%;
+  }
+}
+@media (max-width:768px) and (max-height:1024px){
+  /* iPad */
+  .row{
+    margin-right: 0px;
+  }
+  .menu a{
+    font-size: 130%;
+  }
+  #Home{
+    padding-top: 2vh;
+    padding-bottom: 40vh;
+  }
+  #About{
+    padding-top: 32vh;
+  }
+  #About h2{
+    font-size: 500%;
+  }
+  #About p{
+    font-size: 250%
+  }
+  #About img{
+    margin-top: 20vh;
+  }
+  #Projects{
+    padding-top: 7vh;
+  }
+  #Projects h2{
+    font-size: 500%;
+  }
+  #Projects .row .col:nth-child(1){
+    flex-basis: 63%;
+  }
+  #Projects .row .col:nth-child(2){
+    flex-basis: 62%;
+  }
+  #Projects .row .col:nth-child(3){
+    flex-basis: 57%;
+  }
+  #SBImage{
+    width: 93%;
+  }
+  #shutTheBoxGitLink{
+    font-size: 130%;
+  }
+  #vaidasLogo{
+    width: 90%;
+  }
+  #vaidasGitLink{
+    font-size: 130%;
+  }
+  #forexImage{
+    width: 90%;
+  }
+  #forexGitLink{
+    font-size: 130%;
+  }
+  #Experience{
+    padding-top: 5vh;
+    padding-bottom: 19vh;
+  }
+  #Experience h2{
+    font-size: 500%;
+  }
+  #Experience p{
+    font-size: 130%;
+  }
+  #Skills{
+    padding-top: 26vh;
+    padding-bottom: 31vh;
+  }
+  #Skills .row{
+    margin: 0vh 0vw 0vh 34vw;
+  }
+  #Education{
+    padding-top: 8vh;
+    padding-bottom: 26vh;
+  }
+  #Education h2{
+    font-size: 500%;
+  }
+  #Education p{
+    font-size: 140%;
+  }
+  #LetsTalk h2{
+    font-size: 850%;
+  }
+}
+@media (max-width:767px){
+  /* 60% */
+  #Home h1{
+    font-size: 420%;
+  }
+  #Projects h2{
+    font-size: 360%;
+  }
+}
+@media (max-width:640px){
+  /* 50% */
+  #Home h1{
+    font-size: 350%;
+  }
+  #Projects h2{
+    font-size: 300%;
+  }
+}
+@media (max-width:512px){
+  /* 40% */
+  #Home h1{
+    font-size: 280%;
+  }
+  #Projects h2{
+    font-size: 400%;
+  }
+}
+@media (max-width:414px) and (max-height:736px){
+  /* iPhone 6/7/8 plus */
+  .row{
+    margin-right: 0px;
+  }
+  .menu a{
+    font-size: 80%;
+  }
+  #Home{
+    padding-top: 5vh;
+    padding-bottom: 32vh;
+  }
+  #Home h1{
+    font-size: 320%;
+  }
+  #Home h2{
+    font-size: 238%;
+  }
+  #About{
+    padding-top: 24vh;
+  }
+  #About p{
+    font-size: 180%;
+  }
+  #About img{
+    margin-top: 9vh;
+  }
+  #Projects{
+    padding-top: 8vh;
+  }
+  #Projects .row .col:nth-child(1){
+    flex-basis: 67%;
+  }
+  #Projects .row .col:nth-child(2){
+    flex-basis: 62%;
+  }
+  #Projects .row .col:nth-child(3){
+    flex-basis: 57%;
+  }
+  #Experience h2{
+    font-size: 440%
+  }
+  #Skills{
+    padding-top: 8vh;
+    padding-bottom: 4vh;
+  }
+  #Skills .row{
+    margin: 0vh 0vw 0vh 21vw;
+  }
+  #Education{
+    padding-top: 0vh;
+  }
+  #Education h2{
+    font-size: 470%
+  }
+  #LetsTalk h2{
+    font-size: 500%
+  }
+}
+@media (max-width:411px) and (max-height:823px){
+  /* Pixel XL */
+  .row{
+    margin-right: 0px;
+  }
+  .menu a{
+    font-size: 70%;
+  }
+  #Home{
+    padding-top: 7vh;
+    padding-bottom: 40vh;
+  }
+  #Home h2{
+    font-size: 150%;
+  }
+  #About{
+    padding-top: 24vh;
+  }
+  #About p{
+    font-size: 200%;
+  }
+  #About img{
+    margin-top: 12vh;
+  }
+  #Projects{
+    padding-top: 8vh;
+  }
+  #Projects .row .col:nth-child(1){
+    flex-basis: 67%;
+  }
+  #Projects .row .col:nth-child(2){
+    flex-basis: 62%;
+  }
+  #Projects .row .col:nth-child(3){
+    flex-basis: 57%;
+  }
+  #Experience{
+    padding-top: 0vh;
+  }
+  #Experience h2{
+    font-size: 440%;
+  }
+  #Skills{
+    padding-top: 8vh;
+    padding-bottom: 13vh;
+  }
+  #Skills .row{
+    margin: 0vh 0vw 0vh 21vw;
+  }
+  #Education{
+    padding-top: 0vh;
+    padding-bottom: 11vh;
+  }
+  #Education h2{
+    font-size: 450%;
+  }
+  #LetsTalk h2{
+    font-size: 400%;
+  }
+  #Contact a{
+    font-size: 170%
+  }
+  #Contact span{
+    font-size: 170%;
+  }
+}
+@media (max-width:411px) and (max-height:731px){
+  /* Pixel */
+  .menu a{
+    font-size: 82%;
+  }
+  #Home{
+    padding-top: 8vh;
+    padding-bottom: 37vh;
+  }
+  #Home h2{
+    font-size: 160%;
+  }
+  #About{
+    padding-top: 24vh;
+  }
+  #About p{
+    font-size: 150%;
+  }
+  #About img{
+    margin-top: 19vh
+  }
+  #Projects{
+    padding-top: 10vh;
+  }
+  #Projects .row .col:nth-child(1){
+    flex-basis: 67%;
+  }
+  #Projects .row .col:nth-child(2){
+    flex-basis: 62%;
+  }
+  #Projects .row .col:nth-child(3){
+    flex-basis: 57%;
+  }
+  #Experience h2{
+    font-size: 420%;
+  }
+  #Skills .row{
+    margin: 4vh 0vw 4vh 20vw;
+  }
+  #Education h2{
+    font-size: 460%;
+  }
+  #LetsTalk h2{
+    font-size: 400%
+  }
+  #Contact a{
+    font-size: 170%
+  }
+  #Contact span{
+    font-size: 170%;
+  }
+}
+@media (max-width:384px){
+  /* 30% */
+  .menu a{
+    font-size: 60%
+  }
+  #Home h1{
+    font-size: 365%;
+  }
+  #Home h2{
+    font-size: 186%;
+  }
+  #About h2{
+    font-size: 245%;
+  }
+  #About p{
+    font-size: 124%;
+  }
+  #Projects {
+    padding-top: 12vh
+  }
+  #Projects h2{
+    font-size: 245%;
+  }
+  #Experience h2{
+    font-size: 245%;
+  }
+  .job{
+    font-size: 90%;
+  }
+  #Skills h2{
+    font-size: 400%;
+  }
+  #Skills .row{
+    margin: 4vh 14vw 4vh 14vw;
+  }
+  #Skills p{
+    font-size: 140%;
+  }
+  #Education h2{
+    font-size: 300%;
+  }
+  #Education p{
+    font-size: 90%;
+  }
+  #LetsTalk h2{
+    font-size: 270%;
+  }
+  #linkedin{
+    font-size: 120%
+  }
+  #Contact a{
+    font-size: 120%;
+  }
+  #linkedinLogo{
+    margin-top: 0px;
+  }
+  #email{
+    font-size: 120%;
+  }
+  #Contact span{
+    font-size: 120%;
+  }
+  #emailLogo{
+    margin-top: 8px;
+  }
+  #telephone{
+    font-size: 120%;
+  }
+  #telephoneLogo{
+    margin: 6px 0px 0px -24px;
+  }
+}
+@media (max-width:375px) and (max-height:812px){
+  .menu a{
+    font-size: 73%;
+  }
+  #Home{
+    padding-bottom: 36vh;
+  }
+  #About h2{
+    font-size: 400%;
+  }
+  #About p{
+    font-size: 200%;
+  }
+  #About img{
+    margin-top: 6vh;
+  }
+  #Skills{
+    padding-top: 20vh;
+    padding-bottom: 28vh;
+  }
+  #Education{
+    padding-top: 1vh;
+  }
+}
+@media (max-width:375px) and (max-height:667px){
+  /* iPhone 6/7/8 */
+  h2{
+    font-size: 170%;
+  }
+  .menu a{
+    font-size: 70%;
+  }
+  #Home{
+    padding-top: 10vh;
+    padding-bottom: 40vh;
+  }
+  #Home h1{
+    font-size: 230%;
+  }
+  #About p{
+    font-size: 140%;
+  }
+  #About img{
+    margin-top: 22vh;
+  }
+  #Skills{
+    padding-bottom: 25vh;
+  }
+  #Skills .row{
+    margin: 4vh 14vw 4vh 18vw;
+  }
+  #LetsTalk h2{
+    font-size: 400%
+  }
+}
+@media (max-width:360px) and (max-height:640px){
+  /* Galaxy S5 */
+  .menu a{
+    font-size: 60%
+  }
+  #Home{
+    padding-top: 2vh;
+    padding-bottom: 38vh;
+  }
+  #Home h1{
+    font-size: 365%;
+  }
+  #Home h2{
+    font-size: 186%;
+  }
+  #About{
+    padding-top: 23vh;
+  }
+  #About h2{
+    font-size: 245%;
+  }
+  #About p{
+    font-size: 124%;
+  }
+  #About img{
+    margin-top: 23vh;
+  }
+  #Projects {
+    padding-top: 12vh
+  }
+  #Projects h2{
+    font-size: 245%;
+  }
+  #Projects .row .col:nth-child(1){
+    flex-basis: 67%;
+  }
+  #Projects .row .col:nth-child(2){
+    flex-basis: 62%;
+  }
+  #Projects .row .col:nth-child(3){
+    flex-basis: 57%;
+  }
+  #Experience h2{
+    font-size: 245%;
+  }
+  .job{
+    font-size: 90%;
+  }
+  #Skills{
+    padding-bottom: 23vh;
+  }
+  #Skills h2{
+    font-size: 400%;
+  }
+  #Skills .row{
+    margin: 4vh 14vw 4vh 14vw;
+  }
+  #Skills p{
+    font-size: 140%;
+  }
+  #Education h2{
+    font-size: 300%;
+  }
+  #Education p{
+    font-size: 110%;
+  }
+  #LetsTalk h2{
+    font-size: 270%;
+  }
+  #linkedin{
+    font-size: 120%
+  }
+  #Contact a{
+    font-size: 120%;
+  }
+  #linkedinLogo{
+    margin-top: 0px;
+  }
+  #email{
+    font-size: 120%;
+  }
+  #Contact span{
+    font-size: 120%;
+  }
+  #emailLogo{
+    margin-top: 8px;
+  }
+  #telephone{
+    font-size: 120%;
+  }
+  #telephoneLogo{
+    margin: 6px 0px 0px -24px;
+  }
+}
+@media (max-width:320px) and (max-height:568px){
+  /* iPhone 5 */
+  .menu a{
+    font-size: 60%
+  }
+  #Home{
+    padding-bottom: 29vh; 
+  }
+  #Home h1{
+    font-size: 365%;
+  }
+  #Home h2{
+    font-size: 186%;
+  }
+  #About h2{
+    font-size: 245%;
+  }
+  #About p{
+    font-size: 124%;
+  }
+  #About img{
+    margin-top: 16vh;
+  }
+  #Projects {
+    padding-top: 12vh
+  }
+  #Projects h2{
+    font-size: 245%;
+  }
+  #Experience h2{
+    font-size: 245%;
+  }
+  .job{
+    font-size: 90%;
+  }
+  #Skills h2{
+    font-size: 400%;
+  }
+  #Skills .row{
+    margin: 4vh 14vw 4vh 14vw;
+  }
+  #Skills p{
+    font-size: 140%;
+  }
+  #Education h2{
+    font-size: 300%;
+  }
+  #Education p{
+    font-size: 110%;
+  }
+  #LetsTalk h2{
+    font-size: 270%;
+  }
+  #linkedin{
+    font-size: 120%
+  }
+  #Contact a{
+    font-size: 120%;
+  }
+  #linkedinLogo{
+    margin-top: 0px;
+  }
+  #email{
+    font-size: 120%;
+  }
+  #Contact span{
+    font-size: 120%;
+  }
+  #emailLogo{
+    margin-top: 8px;
+  }
+  #telephone{
+    font-size: 120%;
+  }
+  #telephoneLogo{
+    margin: 6px 0px 0px -24px;
+  }
+}
+@media (max-width:265px){
+  /* 20% */
+  .menu a{
+    font-size: 40%
+  }
+  #Home h1{
+    font-size: 244%;
+  }
+  #Home h2{
+    font-size: 124%;
+  }
+  #About h2{
+    font-size: 164%;
+  }
+  #About p{
+    font-size: 84%;
+  }
+  #Projects {
+    padding-top: 12vh
+  }
+  #Projects h2{
+    font-size: 164%;
+  }
+  #Experience h2{
+    font-size: 164%;
+  }
+  .job{
+    font-size: 60%;
+  }
+  #Skills h2{
+    font-size: 266%;
+  }
+  #Skills .row{
+    margin: 4vh 14vw 4vh 14vw;
+  }
+  #Skills p{
+    font-size: 94%;
+  }
+  #Education h2{
+    font-size: 200%;
+  }
+  #Education p{
+    font-size: 74%;
+  }
+  #LetsTalk h2{
+    font-size: 180%;
+  }
+  #linkedin{
+    font-size: 240%
+  }
+  #Contact a{
+    font-size: 80%;
+  }
+  #email{
+    font-size: 80%;
+  }
+  #Contact span{
+    font-size: 80%;
+  }
+  #telephone{
+    font-size: 80%;
+  }
+}
+@media (max-width:128px){
+  /* 10% */
+  .menu a{
+    font-size: 20%
+  }
+  #Home h1{
+    font-size: 122%;
+  }
+  #Home h2{
+    font-size: 62%;
+  }
+  #About h2{
+    font-size: 82%;
+  }
+  #About p{
+    font-size: 42%;
+  }
+  #Projects {
+    padding-top: 12vh
+  }
+  #Projects h2{
+    font-size: 82%;
+  }
+  #Experience h2{
+    font-size: 82%;
+  }
+  .job{
+    font-size: 30%;
+  }
+  #Skills h2{
+    font-size: 133%;
+  }
+  #Skills .row{
+    margin: 4vh 14vw 4vh 14vw;
+  }
+  #Skills p{
+    font-size: 47%;
+  }
+  #Education h2{
+    font-size: 100%;
+  }
+  #Education p{
+    font-size: 37%;
+  }
+  #LetsTalk h2{
+    font-size: 90%;
+  }
+  #linkedin{
+    font-size: 120%
+  }
+  #Contact a{
+    font-size: 40%;
+  }
+  #email{
+    font-size: 40%;
+  }
+  #Contact span{
+    font-size: 40%;
+  }
+  #telephone{
+    font-size: 40%;
+  }
+}
