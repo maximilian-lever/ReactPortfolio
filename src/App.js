@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import mazeBackground from './img/maze-background.jpg';
+import { BrowserRouter as  Router, Route, Link } from "react-router-dom";
 import sectionBg1 from './img/section-bg1.jpg';
 import bwSquares from './img/B&W squares.jpg';
 import swirls from './img/swirls.jpg';
@@ -12,17 +12,21 @@ import Forex from './img/Forex.png';
 import HTML from './img/HTML5-Logo.png';
 import CSS from './img/CSS3-logo.png';
 import JS from './img/JS-logo.png';
+import ReactLogo from './img/React.js_logo-512.png'
 import LinkedinLogo from './img/Linkedin-logo-1-550x550-300x300.png';
 import GmailLogo from './img/gmail-logo.jpg';
 import TelephoneLogo from './img/red-phone-icon-small-png-0.png';
 import './bootstrap.min.css';
 import './App.css';
 
+// Forex
+import './Projects/resources/CSS/ForexAPI v1.01.css'
+
 class App extends Component {
   render() {
     const 
     homeBackground = {
-        background: 'url(' + mazeBackground + ') left top repeat',
+        background: 'url(' + pwMazeBlack + ') left top repeat',
     },
     experienceBackground = {
         background: 'url(' + sectionBg1 + ')',
@@ -40,6 +44,7 @@ class App extends Component {
         background: 'url(' + pwMazeBlack + ')',
     };
     return (
+      <Router>
       <div className="App">
         {/* Menu-start */}
         <ul class="menu">
@@ -81,34 +86,7 @@ class App extends Component {
                         <h3>FOREIGN EXCHANGE</h3>
                         <img id="forexImage" alt="Foreign Exchange" src={Forex} />
                         {/* Trigger the modal with a button */}
-                        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#forexModal">Open</button>
-                        {/* Modal */}
-                    </div>
-                    <div class="modal fade" id="forexModal" role="dialog">
-                        <div class="modal-dialog">
-                            {/* Modal content */}
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                    <h4 class="modal-title" id="forexModalh4">FOREIGN EXCHANGE</h4>
-                                </div>
-                                <div class="modal-body">
-                                    <img id="forexImage" alt="Foreign Exchange" src={Forex} />
-                                    <p> This project uses the Forge FOREX Quote API to get live prices from the 
-                                        Foreign Exchange market.
-                                        <br></br>
-                                        <br></br>
-                                        I used HTML, CSS &amp; JavaScript. JavaScript is used to make trades 
-                                        with the live prices using simulated currency.
-                                    </p>
-                                </div>
-                                <div class="modal-footer">
-                                    <a href="Projects/Forex.html" target="_blank"><button type="button" class="btn btn-default">Project</button></a>
-                                    <a href="https://github.com/maximilian-lever/Foreign-Exchange" target="_blank"><button type="button" class="btn btn-default">GitHub</button></a>
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                </div>
-                            </div>
-                        </div>
+                        <span class="btn btn-info btn-lg"><Link to={"/forex"}>Open</Link></span>
                     </div>
                 </div>
                 <div class="col">
@@ -116,36 +94,7 @@ class App extends Component {
                         <h3>SHUT THE BOX</h3>
                         <img id="SBImage" alt="SHUT THE BOX" src={ShutTheBox} />
                         {/* Trigger the modal with a button */}
-                        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#shutTheBoxModal">Open</button>
-                        {/* Modal */}
-                        <div class="modal fade" id="shutTheBoxModal" role="dialog">
-                            <div class="modal-dialog">
-                            {/* Modal content */}
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                        <h4 class="modal-title" id="shutTheBoxModalh4">SHUT THE BOX</h4>
-                                    </div>
-                                    <div class="modal-body">
-                                        <img id="SBImage" src="./img/ShutTheBox.png" alt="SHUT THE BOX" />
-                                        <p> Shut the Box is an old English pub game where the player has a tray 
-                                            of numbers from 1 - 12 and a set of dice. The aim of the game is to 
-                                            roll the dice, then the player has to get rid of the total of the 
-                                            numbers rolled on the dice.
-                                            <br></br>
-                                            <br></br>
-                                            The languages used to make this project are HTML, CSS &amp; 
-                                            JavaScript.
-                                        </p>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <a href="Projects/ShutTheBox.html" target="_blank"><button type="button" class="btn btn-default">Project</button></a>
-                                        <a href="https://github.com/maximilian-lever/ShutTheBox" target="_blank"><button type="button" class="btn btn-default">GitHub</button></a>
-                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <span class="btn btn-info btn-lg"><Link to={"/shutTheBox"}>Open</Link></span>
                     </div>
                 </div>
                 <div class="col">
@@ -153,35 +102,7 @@ class App extends Component {
                         <h3>VAIDAS BICYCLES</h3>
                         <img id="vaidasLogo" alt="VAIDAS BICYCLES" src={Vaidas} />
                         {/* Trigger the modal with a button */}
-                        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#vaidasModal">Open</button>
-                        {/* Modal */}
-                        <div class="modal fade" id="vaidasModal" role="dialog">
-                            <div class="modal-dialog">
-                                {/* Modal content */}
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                        <h4 class="modal-title" id="vaidasBicyclesModalh4">VAIDAS BICYCLES</h4>
-                                    </div>
-                                    <div class="modal-body">
-                                        <img id="vaidasLogo" src="./img/vaidas.png" alt="VAIDAS BICYCLES" />
-                                        <p> Vaidas Bicycles is a website that repairs and sells bicycles.
-                                            <br></br>
-                                            I worked with a customer and got they're specification and 
-                                            requirements. 
-                                            <br></br>
-                                            <br></br>
-                                            The site uses HTML &amp; CSS.
-                                        </p>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <a href="Projects/Vaidas/Vaidas.html" target="_blank"><button type="button" class="btn btn-default">Project</button></a>
-                                        <a href="https://github.com/maximilian-lever/Vaidas" target="_blank"><button type="button" class="btn btn-default">GitHub</button></a>
-                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <span class="btn btn-info btn-lg"><Link to={"/vaidas"}>Open</Link></span>
                     </div>
                 </div>
             </div>
@@ -274,29 +195,59 @@ class App extends Component {
         {/* LetsTalk-section-end */}
         {/* Contact-section-start */}
         <section class="text-center" id="Contact" style={contactBackground}>
-                    {/* col-lg-6 col-sm-7 wow fadeInLeft */}
-                    {/* src="js/wow.js" */}
-                    <h3 class="text-uppercase font-weight-normal" id="linkedin">linkedin:</h3>{/* id="linkedin" CSS id */}
-                    <a href="https://uk.linkedin.com/in/maximilian-lever-09214097">
-                        <img alt="LinkedIn Logo" id="linkedinLogo" src={LinkedinLogo}></img>
-                    </a>{/* href link to Linkedin */}
-                    <a href="https://uk.linkedin.com/in/maximilian-lever-09214097">
-                        MAXIMILIAN LEVER
-                    </a>{/* href link to Linkedin */}
-                    <h3 class="text-uppercase font-weight-normal" id="email">email:</h3>{/* id="email" CSS id */}
-                    <img alt="Gmail Logo" id="emailLogo" src={GmailLogo}></img>
-                    <span id="emailAddress">
-                        maximilian.lever@gmail.com
-                    </span>
-                    <h3 class="text-uppercase font-weight-normal" id="telephone">Telephone:</h3>
-                    <img alt="Telephone Logo" id="telephoneLogo" src={TelephoneLogo}></img>
-                    <span id="telephoneN0">
-                        +44 7588 107 261
-                    </span>
+            {/* col-lg-6 col-sm-7 wow fadeInLeft */}
+            {/* src="js/wow.js" */}
+            <h3 class="text-uppercase font-weight-normal" id="linkedin">linkedin:</h3>{/* id="linkedin" CSS id */}
+            <a href="https://uk.linkedin.com/in/maximilian-lever-09214097">
+                <img alt="LinkedIn Logo" id="linkedinLogo" src={LinkedinLogo}></img>
+            </a>{/* href link to Linkedin */}
+            <a href="https://uk.linkedin.com/in/maximilian-lever-09214097">
+                MAXIMILIAN LEVER
+            </a>{/* href link to Linkedin */}
+            <h3 class="text-uppercase font-weight-normal" id="email">email:</h3>{/* id="email" CSS id */}
+            <img alt="Gmail Logo" id="emailLogo" src={GmailLogo}></img>
+            <span id="emailAddress">
+                maximilian.lever@gmail.com
+            </span>
+            <h3 class="text-uppercase font-weight-normal" id="telephone">Telephone:</h3>
+            <img alt="Telephone Logo" id="telephoneLogo" src={TelephoneLogo}></img>
+            <span id="telephoneN0">
+                +44 7588 107 261
+            </span>
+            <span id="madeWithReact">Made with React.</span>
+            <img src={ReactLogo} id='reactContactLogo' alt='React Logo'></img>
         </section>
         {/* Contact-section-end */}
+        <Route path="/forex" component={forex}/>
+        <Route path="/shutTheBox" component={shutTheBox}/>
+        <Route path="/vaidas" component={vaidas}/>
       </div>
+      </Router>
     );
+
+    function forex(){
+        return (
+            <div>
+            <header class="whiteCLR">
+                <div id="accountFunds">
+                    Funds:<div id="money"></div>
+                </div>
+            </header>
+            </div>
+        );
+    }
+
+    function shutTheBox(){
+        return (
+            <div></div>
+        );
+    }
+
+    function vaidas(){
+        return (
+            <div></div>
+        );
+    }
   }
 }
 

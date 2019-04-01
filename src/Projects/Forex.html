@@ -1,0 +1,367 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Foreign Exchange</title>
+        <script src="vendors/script/jquery.js"></script>
+        <link rel="stylesheet" href="resources/CSS/ForexAPI v1.01.css">
+        <link rel="stylesheet" href="resources/CSS/responsive-ForgeAPI.css">
+    </head>
+    <body class="black">
+        <header class="whiteCLR">
+            <div id="accountFunds">
+                Funds:<div id="money"></div>
+            </div>
+        </header>
+        <section style="width: 200px">
+            <!--Five per collum-->
+                    <div id="collumOne">
+            <!--GBP/USD pair_2-->
+                        <div class="red whiteCLR" id="GBPUSD" data-currency-pair="GBPUSD" data-price="0.0" data-bid="0.0" data-ask="0.0">
+                            GBP/USD
+                            <div class="bottom">
+                                BUY PRICE / SELL PRICE
+                                <br>
+                                <div class="border">
+                                    <span class="bid down">0.0</span><!--BUY--> / <span class="ask transition">0.0</span><!--SELL-->
+                                    <br>
+                                    <span class="price down">0.0</span><!--PRICE-->
+                                </div>
+                            </div>
+                            <button class="buy mobile" id="GBPUSDBuy">BUY</button>
+                            <button class="sell mobile" id="GBPUSDSell">SELL</button>
+                        </div>
+            <!--GBP/USD-->
+            <!--GBP/EUR pair_6-->
+                        <div class="red whiteCLR" id="GBPEUR" data-currency-pair="GBPEUR" data-price="0.0" data-bid="0.0" data-ask="0.0">
+                            GBP/EUR
+                            <div class="bottom">
+                                BUY PRICE / SELL PRICE
+                                <br>
+                                <div class="border">
+                                    <span class="bid down">0.0</span><!--BUY--> / <span class="ask transition">0.0</span><!--SELL-->
+                                    <br>
+                                    <span class="price down">0.0</span><!--PRICE-->
+                                </div>
+                            </div>
+                            <button class="buy mobile" id="GBPEURBuy">BUY</button>
+                            <button class="sell mobile" id="GBPEURSell">SELL</button>
+                        </div>
+            <!--GBP/EUR-->
+            <!--GBP/JPY pair_11-->
+                        <div class="red whiteCLR" id="GBPJPY" data-currency-pair="GBPJPY" data-price="0.0" data-bid="0.0" data-ask="0.0">
+                                GBP/JPY
+                            <div class="bottom">
+                                BUY PRICE / SELL PRICE
+                                <br>
+                                <div class="border">
+                                    <span class="bid down">0.0</span><!--BUY--> / <span class="ask transition">0.0</span><!--SELL-->
+                                    <br>
+                                    <span class="price down">0.0</span><!--PRICE-->
+                                </div>
+                            </div>
+                            <button class="buy mobile" id="GBPJPYBuy">BUY</button>
+                            <button class="sell mobile" id="GBPJPYSell">SELL</button>
+                        </div>
+            <!--GBP/JPY-->
+            <!--GBP/BTC-->
+                        <div class="red whiteCLR" id="GBPBTC" data-currency-pair="GBPBTC" data-price="0.0" data-bid="0.0" data-ask="0.0">
+                                GBP/BTC
+                            <div class="bottom">
+                                BUY PRICE / SELL PRICE
+                                <br>
+                                <div class="border">
+                                    <span class="bid down">0.0</span><!--BUY--> / <span class="ask transition">0.0</span><!--SELL-->
+                                    <br>
+                                    <span class="price down">0.0</span><!--PRICE-->
+                                </div>
+                            </div>
+                            <button class="buy mobile" id="GBPBTCBuy">BUY</button>
+                            <button class="sell mobile" id="GBPBTCSell">SELL</button>
+                        </div>
+            <!--GBP/BTC-->
+            <!--GBP/ETH-->
+                        <div class="red whiteCLR" id="GBPETH" data-currency-pair="GBPETH" data-price="0.0" data-bid="0.0" data-ask="0.0">
+                                GBP/ETH
+                            <div class="bottom">
+                                BUY PRICE / SELL PRICE
+                                <br>
+                                <div class="border">
+                                    <span class="bid down">0.0</span><!--BUY--> / <span class="ask transition">0.0</span><!--SELL-->
+                                    <br>
+                                    <span class="price down">0.0</span><!--PRICE-->
+                                </div>
+                            </div>
+                            <button class="buy mobile" id="GBPETHBuy">BUY</button>
+                            <button class="sell mobile" id="GBPETHSell">SELL</button>
+                        </div>
+            <!--GBP/ETH-->
+                    </div>
+                    <div id="collumTwo">
+            <!--GBP/LTC-->
+                        <div class="red whiteCLR" id="GBPLTC" data-currency-pair="GBPLTC" data-price="0.0" data-bid="0.0" data-ask="0.0">
+                                GBP/LTC
+                            <div class="bottom">
+                                BUY PRICE / SELL PRICE
+                                <br>
+                                <div class="border">
+                                    <span class="bid down">0.0</span><!--BUY--> / <span class="ask transition">0.0</span><!--SELL-->
+                                    <br>
+                                    <span class="price down">0.0</span><!--PRICE-->
+                                </div>
+                            </div>
+                            <button class="buy mobile" id="GBPLTCBuy">BUY</button>
+                            <button class="sell mobile" id="GBPLTCSell">SELL</button>
+                        </div>
+            <!--GBP/LTC-->
+            <!--USD/EUR pair_1-->
+                        <div class="red whiteCLR" id="USDEUR" data-currency-pair="USDEUR" data-price="0.0" data-bid="0.0" data-ask="0.0">
+                                USD/EUR
+                            <div class="bottom">
+                                BUY PRICE / SELL PRICE
+                                <br>
+                                <div class="border">
+                                    <span class="bid down">0.0</span><!--BUY--> / <span class="ask transition">0.0</span><!--SELL-->
+                                    <br>
+                                    <span class="price down">0.0</span><!--PRICE-->
+                                </div>
+                            </div>
+                            <button class="buy mobile" id="USDEURBuy">BUY</button>
+                            <button class="sell mobile" id="USDEURSell">SELL</button>
+                        </div>
+            <!--USD/EUR-->
+            <!--USD/JPY pair_3-->
+                        <div class="red whiteCLR" id="USDJPY" data-currency-pair="USDJPY" data-price="0.0" data-bid="0.0" data-ask="0.0">
+                                USD/JPY
+                            <div class="bottom">
+                                BUY PRICE / SELL PRICE
+                                <br>
+                                <div class="border">
+                                    <span class="bid down">0.0</span><!--BUY--> / <span class="ask transition">0.0</span><!--SELL-->
+                                    <br>
+                                    <span class="price down">0.0</span><!--PRICE-->
+                                </div>
+                            </div>
+                            <button class="buy mobile" id="USDJPYBuy">BUY</button>
+                            <button class="sell mobile" id="USDJPYSell">SELL</button>
+                        </div>
+            <!--USD/JPY-->
+            <!--USD/BTC-->
+                        <div class="red whiteCLR" id="USDBTC" data-currency-pair="USDBTC" data-price="0.0" data-bid="0.0" data-ask="0.0">
+                                USD/BTC
+                            <div class="bottom">
+                                BUY PRICE / SELL PRICE
+                                <br>
+                                <div class="border">
+                                    <span class="bid down">0.0</span><!--BUY--> / <span class="ask transition">0.0</span><!--SELL-->
+                                    <br>
+                                    <span class="price down">0.0</span><!--PRICE-->
+                                </div>
+                            </div>
+                            <button class="buy mobile" id="USDBTCBuy">BUY</button>
+                            <button class="sell mobile" id="USDBTCSell">SELL</button>
+                        </div>
+            <!--USD/BTC-->
+            <!--USD/ETH-->
+                        <div class="red whiteCLR" id="USDETH" data-currency-pair="USDETH" data-price="0.0" data-bid="0.0" data-ask="0.0">
+                                USD/ETH
+                            <div class="bottom">
+                                BUY PRICE / SELL PRICE
+                                <br>
+                                <div class="border">
+                                    <span class="bid down">0.0</span><!--BUY--> / <span class="ask transition">0.0</span><!--SELL-->
+                                    <br>
+                                    <span class="price down">0.0</span><!--PRICE-->
+                                </div>
+                            </div>
+                            <button class="buy mobile" id="USDETHBuy">BUY</button>
+                            <button class="sell mobile" id="USDETHSell">SELL</button>
+                        </div>
+            <!--USD/ETH-->
+                    </div>
+                    <div id="collumThree">
+            <!--USD/LTC-->
+                        <div class="red whiteCLR" id="USDLTC" data-currency-pair="USDLTC" data-price="0.0" data-bid="0.0" data-ask="0.0">
+                                USD/LTC
+                            <div class="bottom">
+                                BUY PRICE / SELL PRICE
+                                <br>
+                                <div class="border">
+                                    <span class="bid down">0.0</span><!--BUY--> / <span class="ask transition">0.0</span><!--SELL-->
+                                    <br>
+                                    <span class="price down">0.0</span><!--PRICE-->
+                                </div>
+                            </div>
+                            <button class="buy mobile" id="USDLTCBuy">BUY</button>
+                            <button class="sell mobile" id="USDLTCSell">SELL</button>
+                        </div>
+            <!--USD/LTC-->
+            <!--EUR/JPY pair_9-->
+                        <div class="red whiteCLR" id="EURJPY" data-currency-pair="EURJPY" data-price="0.0" data-bid="0.0" data-ask="0.0">
+                                EUR/JPY
+                            <div class="bottom">
+                                BUY PRICE / SELL PRICE
+                                <br>
+                                <div class="border">
+                                    <span class="bid down">0.0</span><!--BUY--> / <span class="ask transition">0.0</span><!--SELL-->
+                                    <br>
+                                    <span class="price down">0.0</span><!--PRICE-->
+                                </div>
+                            </div>
+                            <button class="buy mobile" id="EURJPYBuy">BUY</button>
+                            <button class="sell mobile" id="EURJPYSell">SELL</button>
+                        </div>
+            <!--EUR/JPY-->
+            <!--EUR/BTC-->
+                        <div class="red whiteCLR" id="EURBTC" data-currency-pair="EURBTC" data-price="0.0" data-bid="0.0" data-ask="0.0">
+                                EUR/BTC
+                            <div class="bottom">
+                                BUY PRICE / SELL PRICE
+                                <br>
+                                <div class="border">
+                                    <span class="bid down">0.0</span><!--BUY--> / <span class="ask transition">0.0</span><!--SELL-->
+                                    <br>
+                                    <span class="price down">0.0</span><!--PRICE-->
+                                </div>
+                            </div>
+                            <button class="buy mobile" id="EURBTCBuy">BUY</button>
+                            <button class="sell mobile" id="EURBTCSell">SELL</button>
+                        </div>
+            <!--EUR/BTC-->
+            <!--EUR/ETH-->
+                        <div class="red whiteCLR" id="EURETH" data-currency-pair="EURETH" data-price="0.0" data-bid="0.0" data-ask="0.0">
+                                EUR/ETH
+                            <div class="bottom">
+                                BUY PRICE / SELL PRICE
+                                <br>
+                                <div class="border">
+                                    <span class="bid down">0.0</span><!--BUY--> / <span class="ask transition">0.0</span><!--SELL-->
+                                    <br>
+                                    <span class="price down">0.0</span><!--PRICE-->
+                                </div>
+                            </div>
+                            <button class="buy mobile" id="EURETHBuy">BUY</button>
+                            <button class="sell mobile" id="EURETHSell">SELL</button>
+                        </div>
+            <!--EUR/ETH-->
+            <!--EUR/LTC-->
+                        <div class="red whiteCLR" id="EURLTC" data-currency-pair="EURLTC" data-price="0.0" data-bid="0.0" data-ask="0.0">
+                                EUR/LTC
+                            <div class="bottom">
+                                BUY PRICE / SELL PRICE
+                                <br>
+                                <div class="border">
+                                    <span class="bid down">0.0</span><!--BUY--> / <span class="ask transition">0.0</span><!--SELL-->
+                                    <br>
+                                    <span class="price down">0.0</span><!--PRICE-->
+                                </div>
+                            </div>
+                            <button class="buy mobile" id="EURLTCBuy">BUY</button>
+                            <button class="sell mobile" id="EURLTCSell">SELL</button>
+                        </div>
+            <!--EUR/LTC-->
+                    </div>
+                    <div class="border mobileTrade" id="collumFour"> 
+                        <div class="red whiteCLR" id="tradeOneDiv">
+                            <span id="tradeOneBuySell">BUY/SELL</span>
+
+                            <span id="tradeOneSpn">Trade 1</span>
+                             at 
+                            <span id="tradeOnePrice">Price</span>
+                            <button class="mobileTradeBtn" id="tradeOneBtn">Close trade</button>
+                        </div>
+                        <div class="red whiteCLR" id="tradeTwoDiv">
+                            <span id="tradeTwoBuySell">BUY/SELL</span>
+
+                            <span id="tradeTwoSpn">Trade 2</span>
+                             at 
+                            <span id="tradeTwoPrice">Price</span>
+                            <button class="mobileTradeBtn" id="tradeTwoBtn">Close trade</button>
+                        </div>
+                        <div class="red whiteCLR" id="tradeThreeDiv">
+                            <span id="tradeThreeBuySell">BUY/SELL</span>
+
+                            <span id="tradeThreeSpn">Trade 3</span>
+                             at 
+                            <span id="tradeThreePrice">Price</span>
+                            <button class="mobileTradeBtn" id="tradeThreeBtn">Close trade</button>
+                        </div>
+                        <div class="red whiteCLR" id="tradeFourDiv">
+                            <span id="tradeFourBuySell">BUY/SELL</span>
+
+                            <span id="tradeFourSpn">Trade 4</span>
+                             at 
+                            <span id="tradeFourPrice">Price</span>
+                            <button class="mobileTradeBtn" id="tradeFourBtn">Close trade</button>
+                        </div>
+                        <div class="red whiteCLR" id="tradeFiveDiv">
+                            <span id="tradeFiveBuySell">BUY/SELL</span>
+
+                            <span id="tradeFiveSpn">Trade 5</span>
+                             at 
+                            <span id="tradeFivePrice">Price</span>
+                            <button class="mobileTradeBtn" id="tradeFiveBtn">Close trade</button>
+                        </div>
+                        <div class="red whiteCLR" id="tradeSixDiv">
+                            <span id="tradeSixBuySell">BUY/SELL</span>
+
+                            <span id="tradeSixSpn">Trade 6</span>
+                             at 
+                            <span id="tradeSixPrice">Price</span>
+                            <button class="mobileTradeBtn" id="tradeSixBtn">Close trade</button>
+                        </div>
+                        <div class="red whiteCLR" id="tradeSevenDiv">
+                            <span id="tradeSevenBuySell">BUY/SELL</span>
+
+                            <span id="tradeSevenSpn">Trade 7</span>
+                             at 
+                            <span id="tradeSevenPrice">Price</span>
+                            <button class="mobileTradeBtn" id="tradeSevenBtn">Close trade</button>
+                        </div>
+                        <div class="red whiteCLR" id="tradeEightDiv">
+                            <span id="tradeEightBuySell">BUY/SELL</span>
+
+                            <span id="tradeEightSpn">Trade 8</span>
+                             at 
+                            <span id="tradeEightPrice">Price</span>
+                            <button class="mobileTradeBtn" id="tradeEightBtn">Close trade</button>
+                        </div>
+                        <div class="red whiteCLR" id="tradeNineDiv">
+                            <span id="tradeNineBuySell">BUY/SELL</span>
+
+                            <span id="tradeNineSpn">Trade 9</span>
+                             at 
+                            <span id="tradeNinePrice">Price</span>
+                            <button class="mobileTradeBtn" id="tradeNineBtn">Close trade</button>
+                        </div>
+                        <div class="red whiteCLR" id="tradeTenDiv">
+                            <span id="tradeTenBuySell">BUY/SELL</span>
+
+                            <span id="tradeTenSpn">Trade 10</span>
+                             at 
+                            <span id="tradeTenPrice">Price</span>
+                            <button class="mobileTradeBtn" id="tradeTenBtn">Close trade</button>
+                        </div>
+                    </div>
+                    <div id="description">
+                        <p>
+                            On the left hand side of the page there is a grid of different currency exchange 
+                            prices.
+                            <br/>
+                            You are able to <b>BUY</b> or <b>SELL</b> at different prices and when you open a Trade it will 
+                            be stored to the right of the grid.
+                            <br/>
+                            It is then possible to close the trade at any time once it has been opened. 
+                            <br/>
+                            Depending if you have made or lost money on the trade, <b>Funds</b> in the top right corner 
+                            will be updated.
+                        </p>
+                    </div>
+        </section>
+        <script type="text/javascript" src="vendors/script/forex-ticker.js"></script>
+        <script>
+            new ForexTicker(1000);
+//          new ForexTicker(*); how many times it will refresh the price.
+        </script>
+        <script src="resources/Script/trade.js"></script>
+    </body>
+</html>

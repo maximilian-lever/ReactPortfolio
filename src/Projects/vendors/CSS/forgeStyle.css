@@ -1,0 +1,22 @@
+*{
+    font-family:open sans,sans-serif!important;
+    font-weight:200
+}
+td{
+    text-align:right;
+    font-weight:700
+}
+.up{
+    color:#85b32b;
+    text-shadow:0 0 1px #85b32b
+}
+.down{
+    color:#c84c40;
+    text-shadow:0 0 1px #c84c40
+}
+.transition{
+    -moz-transition:all .2s ease-in;
+    -o-transition:all .2s ease-in;
+    -webkit-transition:all .2s ease-in;
+    transition:all .2s ease-in
+}

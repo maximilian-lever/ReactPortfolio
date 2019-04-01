@@ -1,0 +1,304 @@
+@media (min-height:812px){
+/*Galaxy S5*/
+/*Pixel 2*/
+/*Pixel 2XL*/
+/*iPhone 5/SE*/
+/*iPhone 6/7/8*/
+/*iPhone 6/7/8 Plus*/
+/*iPhone X*/
+/*iPad*/
+/*iPad Pro*/
+/*width: 1010px;*/
+}
+@media (max-width:992px) and (min-width:601px){
+/*Galaxy S5*/
+/*Pixel 2*/
+/*Pixel 2XL*/
+/*iPhone 5/SE*/
+/*iPhone 6/7/8*/
+/*iPhone 6/7/8 Plus*/
+/*iPhone X*/
+/*iPad*/
+/*width: 2140px;*/
+    /*HEADER-SECTION-START*/
+    header{
+        padding: 0px 0px 2140px 0px;
+    }
+    header h1{
+        margin: 1200px 0px 0px 0px;
+        text-align: center;
+        font-size: 10em;
+    }
+    #logo{
+        margin: 550px 84px 0px 84px;
+        height: 600px;
+        width: auto;
+    }
+    /*HEADER-SECTION-END*/
+    /*ABOUT-SECTION-START*/
+    #about{
+        padding: 0px 0px 2140px 0px;
+    }
+    #about h2{
+        margin: 300px 235px 0px 235px;
+        text-align: center;
+        font-size: 9em;
+    }
+    #about p{
+        margin: 550px 55px 0px 55px;
+        width: 850;
+        font-size: 3em;
+    }
+    /*ABOUT-SECTION-END*/
+    /*BIKE-SECTION-START*/
+    #bike{
+        padding: 0px 0px 2140px 0px;
+    }
+    #bike h2{
+        margin: 200px 290px 0px 290px;
+        font-size: 9em;
+    }
+    #bikeOne{
+        margin: 450px 30px 0px 30px;
+        height: auto;
+        width: 900;
+        font-size: 2em;
+    }
+    #pushTheLimits{
+        height: 90px;
+        width: auto;
+    }
+    #bikeTwo{
+        margin: 800px 0px 0px 30px;
+        height: auto;
+        width: 900;
+        font-size: 2em;
+    }
+    #frogBikes{
+        height: 100px;
+        width: auto;
+    }
+    #bikeThree{
+        margin: 1150px 0px 0px 30px;
+        height: auto;
+        width: 900;
+        font-size: 2em;
+    }
+    #customMadeBikes{
+        height: 120px;
+        width: auto;
+    }
+    #bikeFour{
+        margin: 1500px 0px 0px 30px;
+        height: auto;
+        width: 900;
+        font-size: 2em;
+    }
+    #secondHandBikes{
+        height: 120px;
+        width: auto;
+    }
+    /*BIKE-SECTION-END*/
+    /*RENTALS-SECTION-START*/
+    #rentals{
+        padding: 1px 0px 300px 0px;
+    }
+    #rentals h2{
+        margin: 350px 160px 0px 160px;
+        font-size: 9em;
+    }
+    #rentalP{
+        margin: 700px 0px 0px 0px;
+        font-size: 1.2em;
+    }
+    /*RENTALS-SECTION-END*/
+    /*SERVICES-SECTION-START*/
+    #services{
+        padding: 0px 0px 2140px 0px;
+    }
+    #services h2{
+        margin: 300px 140px 0px 140px;
+        font-size: 9em;
+    }
+    #goldService{
+        margin: 500px 0px 0px 0px;
+        width: 950;
+        font-size: 1.3em;
+    }
+    #generalService{
+        margin: 1250px 0px 0px 0px;
+        width: 950;
+        font-size: 1.3em;
+    }
+    /*SERVICES-SECTION-END*/
+    /*FITNESS-CLASSES-SECTION-START*/
+    #fitnessClasses{
+        padding: 0px 0px 2140px 0px;
+    }
+    #fitnessClasses h2{
+        margin: 300px 0px 0px 10px;
+        font-size: 6.6em;
+    }
+    #fitnessClasses h3{
+        margin: 450px 0px 0px 240px;
+        font-size: 4em
+    }
+    #turboimg{
+        margin: 550px 0px 0px -250px;
+        height: 700px;
+        width: auto;
+    }
+    #fitnessClasses p{
+        margin: 1300px 0px 0px 0px;
+        font-size:2.5em
+    }
+    /*FITNESS-CLASSES-SECTION-END*/
+    /*CONTACT-SECTION-START*/
+    #contact{
+        padding: 0px 0px 2140px 0px;
+    }
+    #contact h2{
+        margin: 500px 150px 0px 150px;
+        font-size: 9em;
+    }
+    #contact p{
+        margin: 800px 0px 0px 0px;
+        font-size: 1.9em
+    }
+    /*CONTACT-SECTION-END*/
+}
+@media (max-width:768px){
+/*Half screen*/
+/*width: 622px;*/
+    /*HEADER-SECTION-START*/
+    /*header{
+        padding: 0px 0px 0px 0px;
+    }
+    header h1{
+        margin: 0px 0px 0px 0px;
+        font-size: 5.7em;
+    }
+    #logo{
+        margin: 0px 0px 0px 0px;
+        height: 300px;
+        width: auto;
+    }
+    /*HEADER-SECTION-END*/
+    /*ABOUT-SECTION-START*/
+    /*#about{
+        padding: 0px 0px 0px 0px;
+    }
+    #about h2{
+        margin: 0px 0px 0px 0px;
+        text-align: center;
+        font-size: 5em;
+    }
+    #about p{
+        margin: 0px 0px 0px 0px;
+        padding: 0px 0px 0px 0px;
+        font-size: 1.8em;
+    }
+    /*ABOUT-SECTION-END*/
+    /*BIKE-SECTION-START*/
+    /*#bike{
+        padding: 0px 0px 0px 0px;
+    }
+    #bike h2{
+        margin: 0px 0px 0px 0px;
+        font-size: 5em;
+    }
+    #bikeOne{
+        margin: 0px 0px 0px 0px;
+    }
+    #pushTheLimits{
+        height: 90px;
+        width: auto;
+    }
+    #bikeTwo{
+        margin: 0px 0px 0px 0px;
+    }
+    #frogBikes{
+        height: 100px;
+        width: auto;
+    }
+    #bikeThree{
+        margin: 0px 0px 0px 0px;
+    }
+    #customMadeBikes{
+        height: 120px;
+        width: auto;
+    }
+    #bikeFour{
+        margin: 0px 0px 0px 0px;
+    }
+    #secondHandBikes{
+        height: 120px;
+        width: auto;
+    }
+    /*BIKE-SECTION-END*/
+    /*RENTALS-SECTION-START*/
+    /*#rentals{
+        padding: 0px 0px 0px 0px;
+    }
+    #rentals h2{
+        margin: 0px 0px 0px 0px;
+        font-size: 5em;
+    }
+    #rentalP{
+        margin: 0px 0px 0px 0px;
+        font-size: 1.2em;
+    }
+    /*RENTALS-SECTION-END*/
+    /*SERVICES-SECTION-START*/
+    /*#services{
+        padding: 0px 0px 0px 0px;
+    }
+    #services h2{
+        margin: 0px 0px 0px 0px;
+        font-size: 5em;
+    }
+    #goldService{
+        margin: 0px 0px 0px 0px;
+        width: 630;
+        font-size: 0.8em;
+    }
+    #generalService{
+        margin: 0px 0px 0px 0px;
+        width: 610;
+        font-size: 0.8em;
+    }
+    /*SERVICES-SECTION-END*/
+    /*FITNESS-CLASSES-SECTION-START*/
+    /*#fitnessClasses{
+        padding: 0px 0px 0px 0px;
+    }
+    #fitnessClasses h2{
+        margin: 0px 0px 0px 0px;
+        font-size: 5em;
+    }
+    #fitnessClasses h3{
+        margin: 0px 0px 0px 0px;
+    }
+    #turboimg{
+        margin: 0px 0px 0px 0px;
+        height: 240px;
+        width: auto;
+    }
+    #fitnessClasses p{
+        margin: 0px 0px 0px 0px;
+    }
+    /*FITNESS-CLASSES-SECTION-END*/
+    /*CONTACT-SECTION-START*/
+    /*#contact{
+        padding: 0px 0px 0px 0px;
+    }
+    #contact h2{
+        margin: 0px 0px 0px 0px;
+        font-size: 5em;
+    }
+    #contact p{
+        margin: 0px 0px 0px 0px;
+        font-size: 1em
+    }
+    /*CONTACT-SECTION-END*/
+}

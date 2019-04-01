@@ -313,15 +313,17 @@ li.slider {
 /* ======================== Education ===================== */
 #Education {
   padding-bottom: 4vh;
-  color: rgb(206, 206, 206);
+  color: rgb(246, 246, 246);
 }
 #Education h2 {
   padding-top: 12vh;
   font-size: 400%;
 }
+.school{
+  font-weight: 550;
+}
 #Education p{
   font-size: 1em;
-  font-weight: 550;
 }
 /* ======================== Education ======================== */
 /* ======================== Lets Talk ======================== */
@@ -338,7 +340,7 @@ li.slider {
   padding-bottom: 2vh;
 }
 #Contact span{
-  font-size: 2em;
+  /* font-size: 2em; */
 }
 #linkedin {
   padding-top: 2vh;
@@ -375,6 +377,118 @@ li.slider {
   width: 20px;
 }
 /* ======================== Contact ======================== */
+@media (max-width:1920px){
+  #Home{
+    padding-bottom: 36vh;
+  }
+  #Home h1{
+    font-size: 1000%;
+  }
+  #Home h2{
+    font-size: 500%;
+  }
+  #About{
+    padding: 35vh 0vh 0vh 0vh;
+  }
+  #About img{
+    margin-top: 26vh;
+    height: 190px;
+  }
+  #Projects{
+    padding-bottom: 24vh;
+  }
+  #Projects h2{
+    font-size: 682%;
+  }
+  #forexImage{
+    width: 87%;
+  }
+  #SBImage{
+    width: 87%;
+  }
+  #vaidasLogo{
+    width: 87%;
+  }
+  #Experience{
+    padding-bottom: 19vh;
+  }
+  #Skills{
+    padding: 14vh 0vh 17vh 0vh;
+  }
+  #Skills h2{
+    font-size: 650%;
+  }
+  #Skills .row{
+    margin-top: 0%
+  }
+  #HTML{
+    margin-left: 30%;
+    width: 15%;
+  }
+  #CSS{
+    margin-left: 0%;
+    width: 10.6%;
+  }
+  #JS{
+    margin: 3% 0% 0% 2%;
+    width: 10.6%;
+  }
+  #Skills p{
+    line-height: inherit;
+    font-size: 170%;
+  }
+  #Education{
+    padding: 8vh 0vh 22vh 0vh;
+  }
+  #Education h2{
+    font-size: 606%;
+  }
+  #Education p{
+    font-size: 125%;
+  }
+  #LetsTalk{
+    padding-bottom: 2vh;
+  }
+  #Contact{
+    padding: 14vh 0vh 18vh 0vh;
+  }
+  #Contact a{
+    font-size: 500%;
+  }
+  #linkedinLogo{
+    margin: 7px 0px 0px -77px;
+    height: 84px;
+    width: inherit;
+  }
+  #emailLogo{
+    margin: 39px 0px 0px -57px;
+    height: 38px;
+    width: inherit;
+  }
+  #emailAddress{
+    font-size: 500%;
+  }
+  #telephoneLogo{
+    margin: 28px 0px 0px -51px;
+    height: 48px;
+    width: inherit;
+  }
+  #telephoneN0{
+    font-size: 500%;
+  }
+  #reactContactLogo{
+    position: absolute;
+    margin: 27vh 0vw 0vh -18vw;
+    height: 17px;
+    width: inherit;
+  }
+  #madeWithReact{
+    position: absolute;
+    margin: 27vh 0vw 0vh -17vw;
+    color: rgb(0, 216, 255);
+    font-weight: 550;
+  }
+}
 @media (max-width:1280px){
   /* 100% */
   #Home h1{
@@ -388,9 +502,6 @@ li.slider {
     margin-bottom: -1vh;
   }
   #Experience h2{
-    font-size: 400%;
-  }
-  #Education h2{
     font-size: 400%;
   }
   #SBImage{
