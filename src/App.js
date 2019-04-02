@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { BrowserRouter as  Router, Route, Link } from "react-router-dom";
 import sectionBg1 from './img/section-bg1.jpg';
 import bwSquares from './img/B&W squares.jpg';
 import swirls from './img/swirls.jpg';
@@ -18,9 +17,6 @@ import GmailLogo from './img/gmail-logo.jpg';
 import TelephoneLogo from './img/red-phone-icon-small-png-0.png';
 import './bootstrap.min.css';
 import './App.css';
-
-// Forex
-import './Projects/resources/CSS/ForexAPI v1.01.css'
 
 class App extends Component {
   render() {
@@ -44,7 +40,6 @@ class App extends Component {
         background: 'url(' + pwMazeBlack + ')',
     };
     return (
-      <Router>
       <div className="App">
         {/* Menu-start */}
         <ul class="menu">
@@ -86,7 +81,9 @@ class App extends Component {
                         <h3>FOREIGN EXCHANGE</h3>
                         <img id="forexImage" alt="Foreign Exchange" src={Forex} />
                         {/* Trigger the modal with a button */}
-                        <span class="btn btn-info btn-lg"><Link to={"/forex"}>Open</Link></span>
+                        <a href='http://maximilian-lever.com-forex.s3-website.eu-west-2.amazonaws.com/'>
+                            <button class="btn btn-info btn-lg">Open</button>
+                        </a>
                     </div>
                 </div>
                 <div class="col">
@@ -94,7 +91,9 @@ class App extends Component {
                         <h3>SHUT THE BOX</h3>
                         <img id="SBImage" alt="SHUT THE BOX" src={ShutTheBox} />
                         {/* Trigger the modal with a button */}
-                        <span class="btn btn-info btn-lg"><Link to={"/shutTheBox"}>Open</Link></span>
+                        <a href='http://maximilian-lever.com-shutthebox.s3-website.eu-west-2.amazonaws.com/'>
+                            <button class="btn btn-info btn-lg">Open</button>
+                        </a>
                     </div>
                 </div>
                 <div class="col">
@@ -102,7 +101,9 @@ class App extends Component {
                         <h3>VAIDAS BICYCLES</h3>
                         <img id="vaidasLogo" alt="VAIDAS BICYCLES" src={Vaidas} />
                         {/* Trigger the modal with a button */}
-                        <span class="btn btn-info btn-lg"><Link to={"/vaidas"}>Open</Link></span>
+                        <a href='http://maximilian-lever.com-vaidas.s3-website.eu-west-2.amazonaws.com/'>
+                            <button class="btn btn-info btn-lg">Open</button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -218,36 +219,8 @@ class App extends Component {
             <img src={ReactLogo} id='reactContactLogo' alt='React Logo'></img>
         </section>
         {/* Contact-section-end */}
-        <Route path="/forex" component={forex}/>
-        <Route path="/shutTheBox" component={shutTheBox}/>
-        <Route path="/vaidas" component={vaidas}/>
       </div>
-      </Router>
     );
-
-    function forex(){
-        return (
-            <div>
-            <header class="whiteCLR">
-                <div id="accountFunds">
-                    Funds:<div id="money"></div>
-                </div>
-            </header>
-            </div>
-        );
-    }
-
-    function shutTheBox(){
-        return (
-            <div></div>
-        );
-    }
-
-    function vaidas(){
-        return (
-            <div></div>
-        );
-    }
   }
 }
 

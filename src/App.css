@@ -377,7 +377,7 @@ li.slider {
   width: 20px;
 }
 /* ======================== Contact ======================== */
-@media (max-width:1920px){
+@media (max-width:1920px) and (min-width:1281px){
   #Home{
     padding-bottom: 36vh;
   }
@@ -531,11 +531,66 @@ li.slider {
   #forexGitLink{
     font-size: 150%;
   }
+  #Skills h2{
+    font-size: 650%;
+  }
+  #Skills .row{
+    margin-top: -2%
+  }
+  #HTML{
+    margin-left: 36%;
+    width: 10%;
+  }
+  #CSS{
+    margin-left: 0%;
+    width: 7.3%;
+  }
+  #JS{
+    margin: 2% 0% 0% 2%;
+    width: 7.3%;
+  }
+  #Skills p{
+    line-height: inherit;
+    font-size: 170%;
+  }
+  #LetsTalk{
+    padding: 1vh 0vw 1vh 0vw;
+  }
   #LetsTalk h2{
     font-size: 933%;
   }
-  #Contact span{
-    font-size: 190%;
+  #Contact{
+    padding: 8vh 0vw 13vh 0vw;
+  }
+  #linkedinLogo{
+    margin: 17px 0px 0px -38px;
+  }
+  #Contact a{
+    font-size: 300%
+  }
+  #emailLogo{
+    margin: 26px 0px 0px -25px;
+  }
+  #emailAddress{
+    font-size: 300%;
+  }
+  #telephoneLogo{
+    margin: 21px 0px 0px -23px;
+  }
+  #telephoneN0{
+    font-size: 300%;
+  }
+  #reactContactLogo{
+    position: absolute;
+    margin: 119px 0vw 0vh -236px;
+    height: 17px;
+    width: inherit;
+  }
+  #madeWithReact{
+    position: absolute;
+    margin: 118px 0vw 0vh -213px;
+    color: rgb(0, 216, 255);
+    font-weight: 550;
   }
 }
 @media (max-width:1152px){
@@ -632,6 +687,18 @@ li.slider {
   }
   #Education p{
     font-size: 185%;
+  }
+  #reactContactLogo{
+    position: absolute;
+    margin: 27vh 0vw 0vh -18vw;
+    height: 17px;
+    width: inherit;
+  }
+  #madeWithReact{
+    position: absolute;
+    margin: 27vh 0vw 0vh -17vw;
+    color: rgb(0, 216, 255);
+    font-weight: 550;
   }
 }
 @media (max-width:1024px){
