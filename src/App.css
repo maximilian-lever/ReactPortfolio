@@ -411,6 +411,7 @@ li.slider {
   }
   #Experience{
     padding-bottom: 19vh;
+    background-size: cover;
   }
   #Skills{
     padding: 14vh 0vh 17vh 0vh;
@@ -500,6 +501,9 @@ li.slider {
   #Projects h2{
     font-size: 450%;
     margin-bottom: -1vh;
+  }
+  #Experience {
+    background-size: cover;
   }
   #Experience h2{
     font-size: 400%;
@@ -601,6 +605,9 @@ li.slider {
   #Projects h2{
     font-size: 540%;
   }
+  #Experience {
+    background-size: cover;
+  }
 }
 @media (max-width:1024px) and (max-height:1366px){
   .row{
@@ -658,6 +665,7 @@ li.slider {
   #Experience{
     padding-top: 12vh;
     padding-bottom: 28vh;
+    background-size: cover;
   }
   #Experience h2{
     font-size: 500%;
@@ -709,6 +717,9 @@ li.slider {
   #Projects h2{
     font-size: 480%;
   }
+  #Experience {
+    background-size: cover;
+  }
 }
 @media (max-width:896px){
   /* 70% */
@@ -717,6 +728,9 @@ li.slider {
   }
   #Projects h2{
     font-size: 420%;
+  }
+  #Experience {
+    background-size: cover;
   }
 }
 @media (max-width:768px) and (max-height:1024px){
@@ -779,6 +793,7 @@ li.slider {
   #Experience{
     padding-top: 5vh;
     padding-bottom: 19vh;
+    background-size: cover;
   }
   #Experience h2{
     font-size: 500%;
@@ -811,7 +826,7 @@ li.slider {
   }
   #reactContactLogo {
     margin: 16vh 0vw 0vh -32vw;
-}
+  }
 }
 @media (max-width:767px){
   /* 60% */
@@ -820,6 +835,9 @@ li.slider {
   }
   #Projects h2{
     font-size: 360%;
+  }
+  #Experience {
+    background-size: cover;
   }
 }
 @media (max-width:640px){
@@ -830,6 +848,9 @@ li.slider {
   #Projects h2{
     font-size: 300%;
   }
+  #Experience {
+    background-size: cover;
+  }
 }
 @media (max-width:512px){
   /* 40% */
@@ -838,6 +859,9 @@ li.slider {
   }
   #Projects h2{
     font-size: 400%;
+  }
+  #Experience {
+    background-size: cover;
   }
 }
 @media (max-width:414px) and (max-height:736px){
@@ -878,6 +902,9 @@ li.slider {
   }
   #Projects .row .col:nth-child(3){
     flex-basis: 57%;
+  }
+  #Experience {
+    background-size: cover;
   }
   #Experience h2{
     font-size: 440%
@@ -963,6 +990,7 @@ li.slider {
   }
   #Experience{
     padding-top: 0vh;
+    background-size: cover;
   }
   #Experience h2{
     font-size: 440%;
@@ -1042,6 +1070,9 @@ li.slider {
   #Projects .row .col:nth-child(3){
     flex-basis: 57%;
   }
+  #Experience {
+    background-size: cover;
+  }
   #Experience h2{
     font-size: 420%;
   }
@@ -1101,6 +1132,9 @@ li.slider {
   }
   #Projects h2{
     font-size: 245%;
+  }
+  #Experience {
+    background-size: cover;
   }
   #Experience h2{
     font-size: 245%;
@@ -1173,6 +1207,7 @@ li.slider {
   }
   #Education{
     padding-top: 1vh;
+    background-size: cover;
   }
   #madeWithReact {
     margin: 12vh 0vw 0vh -36vw;
@@ -1207,6 +1242,9 @@ li.slider {
   }
   #Skills .row{
     margin: 4vh 14vw 4vh 18vw;
+  }
+  #Experience {
+    background-size: cover;
   }
   #LetsTalk h2{
     font-size: 400%
@@ -1268,6 +1306,9 @@ li.slider {
   }
   #Projects .row .col:nth-child(3){
     flex-basis: 57%;
+  }
+  #Experience {
+    background-size: cover;
   }
   #Experience h2{
     font-size: 245%;
@@ -1374,6 +1415,9 @@ li.slider {
   #Skills p{
     font-size: 140%;
   }
+  #Experience {
+    background-size: cover;
+  }
   #Education h2{
     font-size: 300%;
   }
@@ -1440,6 +1484,9 @@ li.slider {
   #Projects h2{
     font-size: 164%;
   }
+  #Experience {
+    background-size: cover;
+  }
   #Experience h2{
     font-size: 164%;
   }
@@ -1502,6 +1549,9 @@ li.slider {
   }
   #Projects h2{
     font-size: 82%;
+  }
+  #Experience {
+    background-size: cover;
   }
   #Experience h2{
     font-size: 82%;
