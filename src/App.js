@@ -26,6 +26,7 @@ class App extends Component {
     },
     experienceBackground = {
         background: 'url(' + sectionBg1 + ')',
+        backgroundSize: 'cover',
     },
     skillsBackground = {
         background: 'linear-gradient(to bottom, rgb(255, 255, 255, 0.8), rgb(255, 255, 255, 0.8)),url(' + bwSquares + ')',
