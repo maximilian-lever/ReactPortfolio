@@ -335,6 +335,44 @@ li.slider {
   font-size: 9em;
 }
 /* ======================== Lets Talk ======================== */
+/* ======================== Charity ======================== */
+#Charity{
+  background-color: rgb(199, 228, 236);
+  padding-bottom: 8%;
+}
+#Charity h2{
+  color: rgb(0, 0, 0);
+  font-size: 300%
+}
+#Charity p{
+  padding: 0% 1%;
+  color: rgb(0, 0, 0);
+  font-size: 84%
+}
+#Kilimanjaro{
+  margin: 0% 41%;
+  height: 144px;
+  width: inherit;
+}
+#RainbowTrust{
+  position: absolute;
+  margin: 0% 0%;
+  height: 144px;
+  width: inherit;
+}
+#SahraAndNatalie{
+  position: absolute;
+  border-style: solid;
+  border-width: 0.7px;
+  border-color: rgb(0, 0, 0);
+  margin: -7% 0% 0% 87.4%;
+  height: 144px;
+  width: inherit;
+}
+#donate{
+  margin-top: 4%;
+}
+/* ======================== Charity ======================== */
 /* ======================== Contact ======================== */
 #Contact {
   padding-bottom: 2vh;

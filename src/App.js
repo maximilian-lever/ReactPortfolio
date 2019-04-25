@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import sectionBg1 from './img/section-bg1.jpg';
-import bwSquares from './img/B&W squares.jpg';
+import bwSquares from './img/B&W-squares.jpg';
 import swirls from './img/swirls.jpg';
 import sectionBg2 from './img/section-bg2.jpg';
 import pwMazeBlack from './img/pw_maze_black_2X.png';
@@ -15,6 +15,9 @@ import ReactLogo from './img/React.js_logo-512.png'
 import LinkedinLogo from './img/Linkedin-logo-1-550x550-300x300.png';
 import GmailLogo from './img/gmail-logo.jpg';
 import TelephoneLogo from './img/red-phone-icon-small-png-0.png';
+import SahraAndNatalie from './img/Sahra-and-Natalie-edited.jpg';
+import RainbowTrust from './img/logo-rainbow-trust@3x.png';
+import Kilimanjaro from './img/sergey-pesterev-221501-unsplash.jpg';
 import './bootstrap.min.css';
 import './App.css';
 
@@ -190,6 +193,37 @@ class App extends Component {
                 <p class="text-center">● Principles of Electro technology (Stage 1) Online (Pass)</p>
         </section>
         {/* Education-section-end */}
+        {/* Charity- section-start */}
+        <section id="Charity">
+            <h2 class="text-center font-weight-bold">Nat and Sahra climb Mount Kilimanjaro</h2>
+            <p class="text-center">
+            Neither of us have done anything like this before but we are ready for the challenge of a lifetime, raising 
+            money for a great charity whilst carrying out an amazing personal challenge. We are not taking on this adventure 
+            till next year (giving us both time to train and get fit) but also to give us enough time to raise the money required.
+            </p>
+            <img id="Kilimanjaro" src={Kilimanjaro}/>
+            <p class="text-center">
+            Rainbow Trust enables families who have a child with a life-threatening illness to make the most of their time together; 
+            providing expert practical and emotional support, where it is needed, for as long as it is needed; from diagnosis, 
+            through treatment and beyond. Rainbow Trust pairs each family with a dedicated Family Support Worker who becomes a 
+            trusted and constant person in family life, supporting in the home, at hospital and in the community. Their work is 
+            almost entirely self-funded, so it is only with the help of supporters like yourselves, that they are able to raise 
+            the funds to care for more families needing support. £23 pays for an hour of support, providing enough time to entertain 
+            a seriously ill child so their parents can have a break. £161 pays for a day's visit from a Family Support Worker which 
+            allows parents to leave the house or simply sleep. £552 pays for an hour of bereavement support for six months for a family 
+            from an expert Family Support Worker. 
+            </p>
+            <img id="RainbowTrust" src={RainbowTrust}/>
+            <div class="text-center row">
+                <div class="col">
+                    <a href="https://www.justgiving.com/fundraising/nat-sahra">
+                        <button class="btn btn-info btn-lg" id="donate">Donate</button>
+                    </a>
+                </div>
+            </div>
+            <img id="SahraAndNatalie" src={SahraAndNatalie}/>
+        </section>
+        {/* Charity- section-end */}
         {/* LetsTalk-section-start */}
         <section id="LetsTalk" style={letsTalk}>
             <h2 class="text-center text-uppercase font-weight-bold wow fadeInLeft">Let’s Talk.</h2>
